@@ -13,7 +13,7 @@ Deux algorithmes sont implémentés et comparés :
 | Mémoire | Replay buffer 50 000 | Rollout buffer 256 |
 | Entraînement | 1 000 épisodes, départ fixe | 1 000 000 pas, 8 positions de départ |
 
-Le rapport complet est disponible dans [`docs/Rapport_PFA_Mariem_Ameni_2026.pdf`](docs/Rapport_PFA_Mariem_Ameni_2026.pdf).
+Le détail de la méthode et des résultats est présenté dans le rapport de PFA.
 
 ## Structure du dépôt
 
@@ -34,7 +34,7 @@ duckiebot-rl-navigation/
 │   ├── ppo/
 │   └── ppo_straight_line/
 ├── scripts/                      ← nœuds de rejeu des CSV vers /cmd_vel (démonstration)
-└── docs/                         ← rapport PFA, arbre TF
+└── docs/                         ← arbre TF
 ```
 
 ## Prérequis
