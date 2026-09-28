@@ -1,0 +1,22 @@
+# colcon workspace
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Runtime outputs (training writes to ~/ros/models and ~/ros/logs)
+diag_frame.png
+*.bag
+*.db3
+
+# Editors / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db

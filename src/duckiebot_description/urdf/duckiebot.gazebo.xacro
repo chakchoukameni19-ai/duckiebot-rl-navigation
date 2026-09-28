@@ -1,0 +1,32 @@
+<robot>
+
+  <gazebo>
+      <!-- IMU -->
+      <plugin filename="ignition-gazebo-imu-system"
+              name="ignition::gazebo::systems::Imu">
+      </plugin>
+
+      <!-- Joint states -->
+      <plugin filename="ignition-gazebo-joint-state-publisher-system"
+              name="ignition::gazebo::systems::JointStatePublisher">
+      </plugin>
+
+      <!-- Diff Drive (roues) -->
+      <plugin filename="libgz-sim8-diff-drive-system"
+              name="ignition::gazebo::systems::DiffDrive">
+
+          <update_rate>50</update_rate>
+
+          <left_joint>left_wheel_hinge</left_joint>
+          <right_joint>right_wheel_hinge</right_joint>
+
+          <wheel_separation>0.4</wheel_separation>
+          <wheel_radius>0.065</wheel_radius>
+
+          <!-- Topic ROS pour commander la vitesse -->
+          <topic>/cmd_vel</topic>
+
+      </plugin>
+  </gazebo>
+
+</robot>
